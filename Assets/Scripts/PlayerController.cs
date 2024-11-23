@@ -1,8 +1,14 @@
 using UnityEngine;
+using static System.Net.Mime.MediaTypeNames;
 
 public class PlayerController : MonoBehaviour
 {
     public float speed = 5f; // Vitesse du personnage
+    public AudioSource source;
+    public float timerDuration = 2f; // Time in seconds
+    private float timeRemaining;
+
+    public bool timerRunning = false;
 
     void Update()
     {
@@ -15,5 +21,44 @@ public class PlayerController : MonoBehaviour
 
         // Appliquer le déplacement au personnage
         transform.position += movement * speed * Time.deltaTime;
+
+        TimerBip();
     }
+
+    public void PlayBip(int speedSound)
+    {
+
+
+    }
+
+    public void TimerBip()
+    {
+        if (timerRunning)
+        {
+            if (timeRemaining > 0)
+            {
+                timeRemaining -= Time.deltaTime;            }
+            else
+            {
+                timeRemaining = 0;
+                source.Play();
+                StartTimer();
+            }
+        }
+
+    }
+
+    public void StartTimer()
+    {
+        timeRemaining = timerDuration;
+        timerRunning = true;
+    }
+
+    // Optional: Method to stop the timer.
+    public void StopTimer()
+    {
+        timerRunning = false;
+    }
+
+
 }
