@@ -16,7 +16,11 @@ public class ConstantSoundDistance : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float distanceToTarget = this.transform.position - target.transform.position;
-        if distanceToTarget.
+        float distanceToTarget = Mathf.Sqrt(Mathf.Pow(this.transform.position.x - target.transform.position.x,2)+Mathf.Pow(
+            this.transform.position.y-target.transform.position.y,2));
+        if (distanceToTarget < 5)
+        {
+
+        }
     }
 }
