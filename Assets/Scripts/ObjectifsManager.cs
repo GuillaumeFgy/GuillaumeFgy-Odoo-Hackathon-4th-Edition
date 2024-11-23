@@ -26,7 +26,7 @@ public class ObjectifsManager : MonoBehaviour
         }
         else
         {
-            //Debug.Log("Toutes les phases sont terminées !");
+            Debug.Log("Toutes les phases sont terminées !");
         }
     }
 

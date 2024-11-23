@@ -16,7 +16,7 @@ public class Sonar : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D other) 
     {
-        //UnityEngine.Debug.Log(other.transform.name);
+        UnityEngine.Debug.Log(other.transform.name);
         
         if (other.tag == "Objective") 
         {
