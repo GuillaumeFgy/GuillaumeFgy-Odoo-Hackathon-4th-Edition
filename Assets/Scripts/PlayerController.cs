@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     public AudioSource source;
     public float timerDuration = 2f; // Time in seconds
     private float timeRemaining;
+    public Animator animator;
 
     public bool timerRunning = false;
 
@@ -18,6 +19,10 @@ public class PlayerController : MonoBehaviour
 
         // Calculer le déplacement
         Vector3 movement = new Vector3(moveX, moveY, 0f);
+        animator.SetFloat("movementY", moveY);
+        animator.SetFloat("movementX", moveX);
+        animator.SetBool("isWalking", Mathf.Abs(moveY) + Mathf.Abs(moveX) != 0);
+        Debug.Log(moveX +","+moveY);
 
         // Appliquer le déplacement au personnage
         transform.position += movement * speed * Time.deltaTime;
