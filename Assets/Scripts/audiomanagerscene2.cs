@@ -19,7 +19,7 @@ public class audiomanagerscene2 : MonoBehaviour
     }
 
    public void Play(string name) { 
-    sound s = Array.Find(Sounds,Sounds=>Sounds.name==name);
+        sound s = Array.Find(Sounds,Sound=>Sound.name==name);
         s.source.Play();
     }
 }
