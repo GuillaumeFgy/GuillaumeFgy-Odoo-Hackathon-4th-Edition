@@ -18,7 +18,7 @@ public class Doors : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "door")
+        if (tag == "Player" && tag!= "Sonar" && other.tag == "door")
         {
             switch (other.transform.name) 
             {

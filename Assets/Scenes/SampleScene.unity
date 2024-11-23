@@ -160,7 +160,7 @@ GameObject:
   m_Component:
   - component: {fileID: 269503115}
   - component: {fileID: 269503116}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 2
   m_TagString: door
   m_Icon: {fileID: 0}
@@ -240,9 +240,9 @@ GameObject:
   - component: {fileID: 327841684}
   - component: {fileID: 327841685}
   - component: {fileID: 327841686}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PhotoBook
-  m_TagString: Untagged
+  m_TagString: Objective
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -392,7 +392,7 @@ GameObject:
   m_Component:
   - component: {fileID: 372873600}
   - component: {fileID: 372873601}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 2
   m_TagString: door
   m_Icon: {fileID: 0}
@@ -460,6 +460,118 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &375390872
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 375390873}
+  - component: {fileID: 375390875}
+  - component: {fileID: 375390874}
+  - component: {fileID: 375390876}
+  m_Layer: 6
+  m_Name: sonar4
+  m_TagString: Sonar
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &375390873
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 375390872}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.53139096, y: -1.4564801, z: -0.013238215}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1535900610}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &375390874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 375390872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcfdd116ac763b940ad8aad22a82817a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1988102349}
+  speed: 2
+  detect: 0
+--- !u!58 &375390875
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 375390872}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 8
+--- !u!50 &375390876
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 375390872}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &413219713
 GameObject:
   m_ObjectHideFlags: 0
@@ -471,9 +583,10 @@ GameObject:
   - component: {fileID: 413219714}
   - component: {fileID: 413219715}
   - component: {fileID: 413219716}
-  m_Layer: 0
+  - component: {fileID: 413219717}
+  m_Layer: 6
   m_Name: sonar2
-  m_TagString: Untagged
+  m_TagString: Sonar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -486,12 +599,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 413219713}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.53139096, y: -1.4564801, z: -0.013238215}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1988102348}
+  m_Father: {fileID: 1535900610}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &413219715
 CircleCollider2D:
@@ -528,7 +641,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 2
+  m_Radius: 3
 --- !u!114 &413219716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -542,6 +655,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1988102349}
+  speed: 0.5
+  detect: 0
+--- !u!50 &413219717
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413219713}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &416115907
 GameObject:
   m_ObjectHideFlags: 0
@@ -552,7 +694,7 @@ GameObject:
   m_Component:
   - component: {fileID: 416115908}
   - component: {fileID: 416115909}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 3
   m_TagString: door
   m_Icon: {fileID: 0}
@@ -630,7 +772,7 @@ GameObject:
   m_Component:
   - component: {fileID: 426751048}
   - component: {fileID: 426751049}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 6
   m_TagString: door
   m_Icon: {fileID: 0}
@@ -707,9 +849,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 461766598}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ApresMidi
-  m_TagString: Untagged
+  m_TagString: Objective
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -743,9 +885,10 @@ GameObject:
   - component: {fileID: 478435274}
   - component: {fileID: 478435275}
   - component: {fileID: 478435276}
-  m_Layer: 0
-  m_Name: sonar1
-  m_TagString: Untagged
+  - component: {fileID: 478435277}
+  m_Layer: 6
+  m_Name: sonar3
+  m_TagString: Sonar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -758,12 +901,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 478435273}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.53139096, y: -1.4564801, z: -0.013238215}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1988102348}
+  m_Father: {fileID: 1535900610}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &478435275
 CircleCollider2D:
@@ -800,7 +943,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 3
+  m_Radius: 5
 --- !u!114 &478435276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -814,6 +957,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1988102349}
+  speed: 1
+  detect: 0
+--- !u!50 &478435277
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 478435273}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &480559030
 GameObject:
   m_ObjectHideFlags: 0
@@ -826,9 +998,9 @@ GameObject:
   - component: {fileID: 480559032}
   - component: {fileID: 480559033}
   - component: {fileID: 480559034}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Apple
-  m_TagString: Untagged
+  m_TagString: Objective
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1163,7 +1335,7 @@ GameObject:
   m_Component:
   - component: {fileID: 612119541}
   - component: {fileID: 612119542}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 9
   m_TagString: door
   m_Icon: {fileID: 0}
@@ -1241,7 +1413,7 @@ GameObject:
   m_Component:
   - component: {fileID: 618314262}
   - component: {fileID: 618314263}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 10
   m_TagString: door
   m_Icon: {fileID: 0}
@@ -1403,7 +1575,7 @@ GameObject:
   m_Component:
   - component: {fileID: 623305425}
   - component: {fileID: 623305426}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 2
   m_TagString: door
   m_Icon: {fileID: 0}
@@ -3495,9 +3667,9 @@ GameObject:
   - component: {fileID: 676321158}
   - component: {fileID: 676321159}
   - component: {fileID: 676321160}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: T-shirt
-  m_TagString: Untagged
+  m_TagString: Objective
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3650,7 +3822,7 @@ GameObject:
   m_Component:
   - component: {fileID: 711320967}
   - component: {fileID: 711320968}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 9
   m_TagString: door
   m_Icon: {fileID: 0}
@@ -3769,7 +3941,7 @@ GameObject:
   m_Component:
   - component: {fileID: 768046099}
   - component: {fileID: 768046100}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 9
   m_TagString: door
   m_Icon: {fileID: 0}
@@ -3878,7 +4050,7 @@ GameObject:
   m_Component:
   - component: {fileID: 878845252}
   - component: {fileID: 878845253}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 7
   m_TagString: door
   m_Icon: {fileID: 0}
@@ -4006,9 +4178,9 @@ GameObject:
   - component: {fileID: 936745634}
   - component: {fileID: 936745635}
   - component: {fileID: 936745636}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Mp3
-  m_TagString: Untagged
+  m_TagString: Objective
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4156,7 +4328,7 @@ GameObject:
   m_Component:
   - component: {fileID: 950078045}
   - component: {fileID: 950078046}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 8
   m_TagString: door
   m_Icon: {fileID: 0}
@@ -4234,7 +4406,7 @@ GameObject:
   m_Component:
   - component: {fileID: 992363057}
   - component: {fileID: 992363058}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 7
   m_TagString: door
   m_Icon: {fileID: 0}
@@ -4311,9 +4483,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1008150437}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Soir
-  m_TagString: Untagged
+  m_TagString: Objective
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7685,7 +7857,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1030590883}
   - component: {fileID: 1030590884}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 8
   m_TagString: door
   m_Icon: {fileID: 0}
@@ -7827,9 +7999,9 @@ GameObject:
   - component: {fileID: 1165166920}
   - component: {fileID: 1165166921}
   - component: {fileID: 1165166922}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WaterCup
-  m_TagString: Untagged
+  m_TagString: Objective
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7982,9 +8154,10 @@ GameObject:
   - component: {fileID: 1217698081}
   - component: {fileID: 1217698082}
   - component: {fileID: 1217698083}
-  m_Layer: 0
-  m_Name: sonar3
-  m_TagString: Untagged
+  - component: {fileID: 1217698084}
+  m_Layer: 6
+  m_Name: sonar1
+  m_TagString: Sonar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7997,12 +8170,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1217698080}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.53139096, y: -1.4564801, z: -0.013238215}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1988102348}
+  m_Father: {fileID: 1535900610}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &1217698082
 CircleCollider2D:
@@ -8053,6 +8226,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1988102349}
+  speed: 0.2
+  detect: 0
+--- !u!50 &1217698084
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217698080}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1235074247
 GameObject:
   m_ObjectHideFlags: 0
@@ -8065,9 +8267,9 @@ GameObject:
   - component: {fileID: 1235074249}
   - component: {fileID: 1235074250}
   - component: {fileID: 1235074251}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Tea
-  m_TagString: Untagged
+  m_TagString: Objective
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8217,9 +8419,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1257316596}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Matin
-  m_TagString: Untagged
+  m_TagString: Objective
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8253,9 +8455,9 @@ GameObject:
   - component: {fileID: 1315864098}
   - component: {fileID: 1315864099}
   - component: {fileID: 1315864100}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sandwich
-  m_TagString: Untagged
+  m_TagString: Objective
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8409,7 +8611,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1318694245}
   - component: {fileID: 1318694246}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 6
   m_TagString: door
   m_Icon: {fileID: 0}
@@ -8486,7 +8688,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1327430692}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Doors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8601,7 +8803,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1391607038}
   - component: {fileID: 1391607039}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 5
   m_TagString: door
   m_Icon: {fileID: 0}
@@ -8679,7 +8881,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1488824274}
   - component: {fileID: 1488824275}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 4
   m_TagString: door
   m_Icon: {fileID: 0}
@@ -8747,6 +8949,118 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1488905829
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1488905830}
+  - component: {fileID: 1488905832}
+  - component: {fileID: 1488905831}
+  - component: {fileID: 1488905833}
+  m_Layer: 6
+  m_Name: sonar5
+  m_TagString: Sonar
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1488905830
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1488905829}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.53139096, y: -1.4564801, z: -0.013238215}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1535900610}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1488905831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1488905829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcfdd116ac763b940ad8aad22a82817a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1988102349}
+  speed: 3
+  detect: 0
+--- !u!58 &1488905832
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1488905829}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 12
+--- !u!50 &1488905833
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1488905829}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1531761489
 GameObject:
   m_ObjectHideFlags: 0
@@ -8757,7 +9071,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1531761490}
   - component: {fileID: 1531761491}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 5
   m_TagString: door
   m_Icon: {fileID: 0}
@@ -8825,6 +9139,42 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1535900609
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1535900610}
+  m_Layer: 0
+  m_Name: Sonars
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1535900610
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535900609}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.53139096, y: 1.4564801, z: 0.013238215}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1217698081}
+  - {fileID: 413219714}
+  - {fileID: 478435274}
+  - {fileID: 375390873}
+  - {fileID: 1488905830}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1536927385
 GameObject:
   m_ObjectHideFlags: 0
@@ -8835,7 +9185,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1536927386}
   - component: {fileID: 1536927387}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 3
   m_TagString: door
   m_Icon: {fileID: 0}
@@ -8912,9 +9262,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1539876288}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Midi
-  m_TagString: Untagged
+  m_TagString: Objective
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8948,9 +9298,9 @@ GameObject:
   - component: {fileID: 1548903755}
   - component: {fileID: 1548903756}
   - component: {fileID: 1548903757}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Book
-  m_TagString: Untagged
+  m_TagString: Objective
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9353,9 +9703,9 @@ GameObject:
   - component: {fileID: 1643153451}
   - component: {fileID: 1643153452}
   - component: {fileID: 1643153453}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Egg
-  m_TagString: Untagged
+  m_TagString: Objective
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9536,7 +9886,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1709261840}
   - component: {fileID: 1709261841}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 2
   m_TagString: door
   m_Icon: {fileID: 0}
@@ -9647,9 +9997,9 @@ GameObject:
   - component: {fileID: 1766393321}
   - component: {fileID: 1766393322}
   - component: {fileID: 1766393323}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Objectifs
-  m_TagString: Untagged
+  m_TagString: Objective
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9848,9 +10198,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1952231044}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Nuit
-  m_TagString: Untagged
+  m_TagString: Objective
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9881,7 +10231,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1985916785}
   - component: {fileID: 1985916786}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 6
   m_TagString: door
   m_Icon: {fileID: 0}
@@ -10065,10 +10415,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 478435274}
-  - {fileID: 413219714}
-  - {fileID: 1217698081}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1988102349
@@ -10083,9 +10430,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be3d32eb4b34eae449c17338c8842939, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 2
   source: {fileID: 1988102352}
   timerDuration: 2
+  sonar1: {fileID: 1217698083}
+  sonar2: {fileID: 413219716}
+  sonar3: {fileID: 478435276}
+  sonar4: {fileID: 375390874}
+  sonar5: {fileID: 1488905831}
   timerRunning: 0
 --- !u!114 &1988102350
 MonoBehaviour:
@@ -10263,7 +10615,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2009274882}
   - component: {fileID: 2009274883}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 1
   m_TagString: door
   m_Icon: {fileID: 0}
@@ -10832,3 +11184,4 @@ SceneRoots:
   - {fileID: 934809471}
   - {fileID: 746738795}
   - {fileID: 1327430692}
+  - {fileID: 1535900610}
