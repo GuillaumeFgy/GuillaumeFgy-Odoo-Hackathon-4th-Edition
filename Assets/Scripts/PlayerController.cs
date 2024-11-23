@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
     public SpriteRenderer spriteRenderer;
 
     public bool timerRunning = false;
+
     public float posx;
     public float posy;
 
@@ -25,6 +26,7 @@ public class PlayerController : MonoBehaviour
         // Récupérer les entrées des flèches directionnelles (ou WASD)
         float moveX = Input.GetAxis("Horizontal"); // Flèche gauche/droite
         float moveY = Input.GetAxis("Vertical");   // Flèche haut/bas
+
         posx = moveX;
         posy = moveY;
 
@@ -40,11 +42,6 @@ public class PlayerController : MonoBehaviour
         else if (moveX > 0)
         {
             spriteRenderer.flipX = false;
-        }
-
-        if (moveY != 0 || moveX != 0) 
-        {
-            
         }
 
         // Appliquer le déplacement au personnage

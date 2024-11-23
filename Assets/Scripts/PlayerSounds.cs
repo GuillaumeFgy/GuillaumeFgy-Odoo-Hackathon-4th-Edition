@@ -14,7 +14,8 @@ public class PlayerSounds : MonoBehaviour
     public float stepInterval = 0.3f; // Time interval between steps
     private float stepTimer = 0f; // Timer to track steps
     public float pitchVariation = 0.2f; // How much to vary the pitch
-    private PlayerController characterController;
+    public PlayerController characterController;
+
 
     void Start()
     {
