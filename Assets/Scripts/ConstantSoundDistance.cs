@@ -5,6 +5,7 @@ public class ConstantSoundDistance : MonoBehaviour
 {
     public AudioSource audioSource;
     public GameObject target;
+    public float distance = 4;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -18,9 +19,12 @@ public class ConstantSoundDistance : MonoBehaviour
     {
         float distanceToTarget = Mathf.Sqrt(Mathf.Pow(this.transform.position.x - target.transform.position.x,2)+Mathf.Pow(
             this.transform.position.y-target.transform.position.y,2));
-        if (distanceToTarget < 5)
+        if (distanceToTarget < distance)
         {
-
+            audioSource.volume = 1 - distanceToTarget / distance;
+        } else
+        {
+            audioSource.volume = 0;
         }
     }
 }
