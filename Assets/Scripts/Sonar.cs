@@ -3,27 +3,32 @@ using System.Security.Cryptography;
 using UnityEngine;
 
 public class Sonar : MonoBehaviour
-
+   
 {
     public PlayerController player;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public float speed;
+    public bool detect = false;
 
-    // Update is called once per frame
-    void Update()
+    void Update() 
     {
-        
+        transform.position = player.transform.position;
     }
 
     void OnTriggerStay2D(Collider2D other) 
     {
-        if (other.tag != "Player" && !player.timerRunning) 
-        {
-            player.StartTimer();
-        }
+        UnityEngine.Debug.Log(other.transform.name);
         
+        if (other.tag == "Objective") 
+        {
+            detect = true;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D other) 
+    {
+        if (other.tag == "Objective") 
+        {
+            detect = false;
+        }
     }
 }
