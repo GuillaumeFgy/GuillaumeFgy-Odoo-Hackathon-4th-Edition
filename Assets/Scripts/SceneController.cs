@@ -8,6 +8,7 @@ public class SceneController : MonoBehaviour
     public AudioClip afterFirstObjective;   // Son joué après le premier objectif
     public GameObject[] objectives;         // Les objectifs à collecter
     private int currentObjectiveIndex = 0;  // Index du prochain objectif à activer
+    public LevelLoadScript levelLoad;
 
     void Start()
     {
@@ -76,7 +77,7 @@ public class SceneController : MonoBehaviour
         int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
         if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
         {
-            SceneManager.LoadScene(nextSceneIndex);
+            levelLoad.LoadNextLevel();
         }
         else
         {
