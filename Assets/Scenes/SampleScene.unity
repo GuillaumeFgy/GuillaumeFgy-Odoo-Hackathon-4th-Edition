@@ -10314,6 +10314,7 @@ GameObject:
   - component: {fileID: 1988102350}
   - component: {fileID: 1988102351}
   - component: {fileID: 1988102352}
+  - component: {fileID: 1988102353}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -10392,7 +10393,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 4334783836991956000, guid: f5d3bc45a8a947d4a8fa5ce25af11570, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -10438,6 +10439,8 @@ MonoBehaviour:
   sonar3: {fileID: 478435276}
   sonar4: {fileID: 375390874}
   sonar5: {fileID: 1488905831}
+  animator: {fileID: 1988102353}
+  spriteRenderer: {fileID: 1988102347}
   timerRunning: 0
 --- !u!114 &1988102350
 MonoBehaviour:
@@ -10500,7 +10503,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1, y: 1.5333333}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -10605,6 +10608,28 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &1988102353
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988102344}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f3af02bb835c7ef4581648be8945e657, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2009274881
 GameObject:
   m_ObjectHideFlags: 0
