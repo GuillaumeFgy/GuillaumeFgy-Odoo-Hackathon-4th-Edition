@@ -18,11 +18,17 @@ public class PlayerController : MonoBehaviour
 
     public bool timerRunning = false;
 
+    public float posx;
+    public float posy;
+
     void Update()
     {
         // Récupérer les entrées des flèches directionnelles (ou WASD)
         float moveX = Input.GetAxis("Horizontal"); // Flèche gauche/droite
         float moveY = Input.GetAxis("Vertical");   // Flèche haut/bas
+
+        posx = moveX;
+        posy = moveY;
 
         // Calculer le déplacement
         Vector3 movement = new Vector3(moveX, moveY, 0f);
