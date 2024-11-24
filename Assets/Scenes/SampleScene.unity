@@ -467,7 +467,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 8
+  m_Radius: 12
 --- !u!50 &375390876
 Rigidbody2D:
   serializedVersion: 5
@@ -564,7 +564,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 3
+  m_Radius: 5
 --- !u!114 &413219716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -832,7 +832,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 5
+  m_Radius: 9
 --- !u!114 &478435276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1041,11 +1041,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4704645078018858813, guid: 2941f78d5efbff047be3a52215c1af4c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.41
       objectReference: {fileID: 0}
     - target: {fileID: 4704645078018858813, guid: 2941f78d5efbff047be3a52215c1af4c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.92
       objectReference: {fileID: 0}
     - target: {fileID: 4704645078018858813, guid: 2941f78d5efbff047be3a52215c1af4c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1099,6 +1099,10 @@ PrefabInstance:
       propertyPath: sonar5
       value: 
       objectReference: {fileID: 1488905831}
+    - target: {fileID: 6903778934103771460, guid: 2941f78d5efbff047be3a52215c1af4c, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8069502670327081064, guid: 2941f78d5efbff047be3a52215c1af4c, type: 3}
       propertyPath: c1
       value: 
@@ -1176,7 +1180,7 @@ Transform:
   m_GameObject: {fileID: 555217173}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.404, y: -6.181, z: 0}
+  m_LocalPosition: {x: 0.47, y: 1.87, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7888,7 +7892,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 1
+  m_Radius: 3
 --- !u!114 &1217698083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8442,7 +8446,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 12
+  m_Radius: 15
 --- !u!50 &1488905833
 Rigidbody2D:
   serializedVersion: 5
@@ -8528,7 +8532,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5217765890619725955, guid: aea1d70797a06c84da84390ffbdcba2f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7532609992012045417, guid: aea1d70797a06c84da84390ffbdcba2f, type: 3}
       propertyPath: m_Alpha

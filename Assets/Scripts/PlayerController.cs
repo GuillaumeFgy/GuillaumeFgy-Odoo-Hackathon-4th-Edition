@@ -58,7 +58,7 @@ public class PlayerController : MonoBehaviour
         else if (sonar3.detect) { timerDuration = sonar3.speed; timerRunning = true; }
         else if (sonar4.detect) { timerDuration = sonar4.speed; timerRunning = true; }
         else if (sonar5.detect) { timerDuration = sonar5.speed; timerRunning = true; }
-        else { timerRunning = false; }
+        else { timerDuration = 50f;  timerRunning = false; }
     }
 
     public void TimerBip()

@@ -55,7 +55,6 @@ public class PlayerSounds : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other) 
     {
-        UnityEngine.Debug.Log(other.transform.name);
         if (tag == "Player" && tag != "Sonar" && other.tag == "door")
         {
             switch (other.transform.name)
