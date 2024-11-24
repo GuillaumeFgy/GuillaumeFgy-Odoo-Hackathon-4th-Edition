@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement; // Nécessaire pour changer de scène
 
 public class Scene4Controller : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class Scene4Controller : MonoBehaviour
     public GameObject telephoneObject;            // Téléphone que le joueur doit toucher
 
     private bool telephoneInteracted = false;     // Vérifie si le téléphone a été touché
+
+    public LevelLoadScript levelLoad;
 
     void Start()
     {
@@ -67,6 +70,23 @@ public class Scene4Controller : MonoBehaviour
     void PlayAudio5()
     {
         PlaySingleAudio(audio5);
+
+        // Charger Scene5 1 seconde après la fin d'audio5
+        float delay = audio5 != null ? audio5.length + 1f : 1f; // Calculer le délai
+        Invoke(nameof(LoadNextScene), delay);
+    }
+
+    void LoadNextScene()
+    {
+        int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+        if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
+        {
+            levelLoad.LoadNextLevel();
+        }
+        else
+        {
+            Debug.Log("Toutes les scènes sont terminées !");
+        }
     }
 
     void PlaySingleAudio(AudioClip clip)
