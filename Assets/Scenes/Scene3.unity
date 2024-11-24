@@ -1215,11 +1215,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4704645078018858813, guid: 2941f78d5efbff047be3a52215c1af4c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4704645078018858813, guid: 2941f78d5efbff047be3a52215c1af4c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.97
       objectReference: {fileID: 0}
     - target: {fileID: 4704645078018858813, guid: 2941f78d5efbff047be3a52215c1af4c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1273,6 +1273,14 @@ PrefabInstance:
       propertyPath: sonar5
       value: 
       objectReference: {fileID: 1488905831}
+    - target: {fileID: 6815741579733440593, guid: 2941f78d5efbff047be3a52215c1af4c, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6903778934103771460, guid: 2941f78d5efbff047be3a52215c1af4c, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8069502670327081064, guid: 2941f78d5efbff047be3a52215c1af4c, type: 3}
       propertyPath: c1
       value: 
