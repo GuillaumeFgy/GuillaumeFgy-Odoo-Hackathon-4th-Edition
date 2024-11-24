@@ -687,11 +687,11 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: 18cc3b84-13ca-49fe-b008-0406a876948f
+  cloudProjectId: 78fffc41-6f7c-427a-bfef-9c4e7826cebd
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: My project 2024-11-23_02-50-21
-  organizationId: damianowski37
+  projectName: My project (1)
+  organizationId: odhrael
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
