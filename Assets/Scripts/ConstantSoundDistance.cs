@@ -19,6 +19,7 @@ public class ConstantSoundDistance : MonoBehaviour
     {
         float distanceToTarget = Mathf.Sqrt(Mathf.Pow(this.transform.position.x - target.transform.position.x,2)+Mathf.Pow(
             this.transform.position.y-target.transform.position.y,2));
+       
         if (distanceToTarget < distance)
         {
             audioSource.volume = 1 - distanceToTarget / distance;
