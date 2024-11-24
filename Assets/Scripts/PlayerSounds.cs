@@ -8,6 +8,7 @@ public class PlayerSounds : MonoBehaviour
     public AudioSource sourceStone;
     public AudioSource sourceWood;
     public AudioSource sourceHit;
+    public AudioSource sourceBathroom;
 
     private AudioSource currentStep;
 
@@ -55,10 +56,14 @@ public class PlayerSounds : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other) 
     {
+
         if (tag == "Player" && tag != "Sonar" && other.tag == "door")
         {
+            UnityEngine.Debug.Log(other.transform.name);
             switch (other.transform.name)
             {
+                
+
                 case "1":
                     currentStep = sourceStone; break;
                 case "2":
@@ -78,7 +83,7 @@ public class PlayerSounds : MonoBehaviour
                 case "9":
                     currentStep = sourceStone; break;
                 case "10":
-                    currentStep = sourceStone; break;
+                    currentStep = sourceBathroom; break;
             }
         }
     }
